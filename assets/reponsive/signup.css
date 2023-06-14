@@ -1,0 +1,273 @@
+/* pc */
+@media (min-width: 1024px){
+
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px){
+    main{
+        width: 720px;
+    }
+
+    .container{
+        width: 720px;
+
+    }
+
+    .register{
+        width: 75%;
+    }
+}
+
+/* mobile and small mobile */
+@media (max-width: 767px){
+    /* header */
+    nav{
+        justify-content: space-evenly;
+    }
+
+    main{
+        z-index: 10;
+    }
+
+    .logout{
+        align-self: center;
+    }
+
+    #menu{
+        display: none;
+        z-index: 13;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0px;
+        animation: madalFadeIn ease 0.5s;
+    }
+
+    .menu-mobile{
+        display: block;
+
+    }
+
+    .menu>li{
+        display: block;
+    }
+
+    .menu>li>a{
+        display: block;
+    }
+
+}
+
+/* mobile */
+@media (min-width: 480px) and (max-width: 767px){
+    /* header */
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav{
+        width: 100%;
+    }
+    .logout{
+        z-index: 1;
+    }
+
+    menu{
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu{
+        position: absolute;
+        top: 345px;
+        width: 90%;
+        background: #edeae1;
+        border: 1px solid var(--grey-color);
+    }
+
+    .menu>li{
+        padding: 0 15px;
+    }
+
+    /* container */
+    .container{
+        width: 100%;
+        height: 1150px;
+    }
+
+    .register{
+        width: 450px;
+    }
+
+    .btn-register,
+    .check-box,
+    .pass-word,
+    .name-acc,
+    .last-name,
+    .first-name{
+        width: 350px;
+    }
+
+    .or-dash{
+        width: 350px;
+    }
+
+    .box-fb-gg span{
+        font-size: 0.75rem;
+    }
+
+    .link-login{
+        width: auto;
+        text-align: center;
+    }
+
+    /* footer */
+    footer{
+        margin-top: 0;
+    }
+
+    footer>menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu-bottom{
+        width: 500px;
+        height: 50px;
+        margin: auto;
+    }
+
+    .text-footer{
+        width: 500px;
+        margin-top: 0;
+    }
+}
+
+/* small phone */
+@media (max-width: 480px){
+    /* header */
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    menu{
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu{
+        position: absolute;
+        width: 90%;
+        top: 368px;
+        background: #edeae1;
+        border: 1px solid var(--grey-color);
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    .logout{
+        width: 57%;
+        text-align: center;
+    }
+ 
+    .menu-mobile{
+        width: 95%;
+        height: 40%;
+        margin-top: 30px;
+    }
+
+    /* main section */
+    .container{
+        width: 95%;
+        height: 1200px;
+    }
+
+    .register{
+        width: 90%;
+    }
+
+    .btn-register,
+    .check-box,
+    .pass-word,
+    .name-acc,
+    .last-name,
+    .first-name{
+        width: 90%;
+    }
+
+    .or-dash{
+        width: 90%;
+    }
+
+    .box-fb-gg{
+        width: 90%;
+    }
+
+    .box-fb,
+    .box-gg{
+        justify-content: space-around;
+    }
+
+    .box-fb-gg span{
+        width: 75%;
+        font-size: 0.8rem;
+    }
+    
+    .box-gg img,
+    .box-fb img{
+        width: 15%;
+    }
+    
+    .link-login{
+        width: auto;
+        text-align: center;
+    }
+
+    /* footer */
+    footer>menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu-bottom{
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-bottom a{
+        padding: 0 10px;
+        font-size: 0.8rem;
+    }
+
+    .text-footer{
+        margin-top: 10px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 320px){
+    .logout{
+        margin-bottom: 20px;
+    }
+    
+    .menu-mobile {
+        margin-top: 0;
+    }
+    
+    .box-fb,
+    .box-gg{
+        height: 60px;
+    }
+}

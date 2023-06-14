@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./assets/img/fish.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/signup.css">
+    <link rel="stylesheet" href="./assets/reponsive/signup.css">
+</head>
+<body>
+    <!-- phần đầu trang -->
+    <header id="header">
+        <main>
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/img/logo/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <div class="logout">
+                    <a href="./signup.html">Login/Register</a>|
+                    <a href="./contact.html">Contact Us</a>|
+                    <a href="">Wishlist</a>
+                </div>
+                <menu>
+                    <ul id="menu" class="menu">
+                        <li><a href="./index.html">
+                            <i class="fa-solid fa-house"></i>
+                            HOME
+                        </a></li>
+                        <li><a href="./shop.html">SHOP</a></li>
+                        <li><a href="./blog.html">BLOG</a></li>
+                        <li><a href="./ourmenu.html">OUR MENU</a></li>
+                        <li class="other">
+                            <a href="">
+                                MORE
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul>
+                                <li><a href="./about.html">ABOUT US</a></li>
+                                <li><a href="./contact.html">CONTACT US</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </menu>
+                <div class="menu-mobile">
+                    <div class="menu-mobile-child">
+                        <span>Menu</span>
+                        <i id="menu-item" class="fa-solid fa-bars" onclick="showMenu()"></i>
+                    </div>
+                </div>
+            </nav>
+        </main>
+    </header>
+    <!-- container -->
+    <main class="container">
+        <div class="register">
+            <h3>REGISTER</h3>
+            <form action="">
+                <div class="first-name">
+                    <label for="first">First name( <span style="color: red;">*</span> )</label>
+                    <input required id="first" type="text" placeholder="First name">
+                </div>
+                <div class="last-name">
+                    <label for="last">Last name( <span style="color: red;">*</span> )</label>
+                    <input required id="last" type="text" placeholder="Last name">
+                </div>
+                <div class="name-acc">
+                    <label for="name-accout">Email or phone number( <span style="color: red;">*</span> )</label>
+                    <input required id="name-accout" type="text" placeholder="Email or phone number">
+                </div>
+                <div class="pass-word">
+                    <label for="pass">Password( <span style="color: red;">*</span> )</label>
+                    <input required id="pass" type="password" placeholder="Password">
+                    <i onclick="showPassword()" id="eye" class="fa-solid fa-eye-slash"></i>
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" required>
+                    <span>I agree to the above terms</span>
+                </div>
+                <div class="btn-register">
+                    <button>Register</button>
+                </div>
+            </form>
+            <div class="or-dash">
+                <span class="dash-left"></span>
+                <span class="dash-text">or</span>
+                <span class="dash-right"></span>
+            </div>
+            <div class="box-fb-gg">
+                <div class="box-fb">
+                    <img src="./assets/img/logo/fb.webp" alt="">
+                    <span>continue with facebook</span>
+                </div>
+                <div class="box-gg">
+                    <img src="./assets/img/logo/gg.webp" alt="">
+                    <span>continue with google</span>
+                </div>
+            </div>
+            <div class="link-login">
+                <span>Do you already have an account?</span>
+                <a href="./login.html">Login</a>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <menu>
+            <ul class="menu-bottom">
+                <li><a href="./index.html">
+                    <i class="fa-solid fa-house"></i>
+                    HOME
+                </a></li>
+                <li><a href="./shop.html">SHOP</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./ourmenu.html">OUR MENU</a></li>
+                <li><a href="./about.html">ABOUT US</a></li>
+            </ul>
+            <div class="text-footer"><span>© 2023 copy right duongntpd07645</span></div>
+        </menu>
+    </footer>
+    <script src="./assets/js/signup.js"></script>
+</body>
+</html>

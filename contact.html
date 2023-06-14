@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./assets/img/fish.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/reponsive/contact.css">
+</head>
+<body>
+    <header id="header">
+        <main>
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/img/logo/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <div class="logout">
+                    <a href="./signup.html">Login/Register</a>|
+                    <a href="./contact.html">Contact Us</a>|
+                    <a href="">Wishlist</a>
+                </div>
+                <menu>
+                    <ul id="menu" class="menu">
+                        <li><a href="./index.html">
+                            <i class="fa-solid fa-house"></i>
+                            HOME
+                        </a></li>
+                        <li><a href="./shop.html">SHOP</a></li>
+                        <li><a href="./blog.html">BLOG</a></li>
+                        <li><a href="./ourmenu.html">OUR MENU</a></li>
+                        <li class="other">
+                            <a href="">
+                                MORE
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul>
+                                <li><a href="./about.html">ABOUT US</a></li>
+                                <li><a href="./contact.html">CONTACT US</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </menu>
+                <div class="menu-mobile">
+                    <div class="menu-mobile-child">
+                        <span>Menu</span>
+                        <i id="menu-item" class="fa-solid fa-bars" onclick="showMenu()"></i>
+                    </div>
+                </div>
+            </nav>
+        </main>
+    </header>
+    <!-- Phần banner -->
+    <section class="main-section">
+        <div class="banner">
+            <div class="cart-search">
+                 <div class="cart">
+                    <div id="cart-child" class="cart-child">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>0 Items</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div id="cart-info">
+                        <p>No products in the cart.</p>
+                    </div>
+                </div>
+                <div class="search">
+                    <form action="">
+                        <input type="text" placeholder="Search Products...">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- container -->
+    <main class="container">
+        <h4>CONTACT US</h4>
+        <section class="section1">
+            <div class="form-input">
+                <form action="">
+                    <div class="name">
+                        <label for="your-name">Your name</label>
+                        <input id="your-name" type="text" placeholder="Your name" required>
+                    </div>
+                    <div class="email">
+                        <label for="your-email">Your email</label>
+                        <input id="your-email" type="email" placeholder="Your email" required>
+                    </div>
+                    <div class="subject">
+                        <label for="your-subject">Subject</label>
+                        <input id="your-subject" type="text" placeholder="Your-subject">
+                    </div>
+                    <div class="message">
+                        <label for="your-message">Your message</label>
+                        <textarea name="" id="your-message" cols="30" rows="12" placeholder="your-message"></textarea>
+                    </div>
+                    <div class="btn-submit">
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="text-contact">
+                <h5>Megnor Computer Pvt. Ltd.</h5>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    It is a long established fact that a reader will be distracted 
+                    by the readable content of a page when looking at its layout.  
+                    507-Union Trade Centre, Beside Apple Hospital, Udhana Darwaja, 
+                    Ring Road, Surat.
+                </p>
+                <div class="link-contact">
+                    <a href="tel:0815416086" ><i class="fa-solid fa-phone"></i> 0815416086</a>
+                    <a href="mailto:tinhabc3009@gmail.com"><i class="fa-solid fa-envelope"></i> tinhabc3009@gmail.com</a>
+                </div>
+                <div class="days">
+                    <i class="fa-solid fa-calendar-days"></i> Monday - Friday 10 AM - 8 PM
+                </div>
+            </div>
+        </section>
+        <section class="section-map">
+            <h4>MAP</h4>
+            <div class="box-map">
+                <div class="box-map-child">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.8025459866653!2d108.16737407500487!3d16.075732984604652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314218e6e07b1c3f%3A0x459e4bf5a2af323e!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYyDEkMOgIE7hurVuZw!5e0!3m2!1svi!2s!4v1686087417916!5m2!1svi!2s" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" 
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </div>
+            </div>
+        </iframe>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <menu>
+            <ul class="menu-bottom">
+                <li><a href="./index.html">
+                    <i class="fa-solid fa-house"></i>
+                    HOME
+                </a></li>
+                <li><a href="./shop.html">SHOP</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./ourmenu.html">OUR MENU</a></li>
+                <li><a href="./about.html">ABOUT US</a></li>
+            </ul>
+            <div class="text-footer"><span>© 2023 copy right duongntpd07645</span></div>
+        </menu>
+    </footer>
+    <!-- javascript -->
+    <script src="./assets/js/contact.js"></script>
+</body>
+</html>

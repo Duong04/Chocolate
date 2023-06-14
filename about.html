@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./assets/img/fish.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/reponsive/about.css">
+</head>
+<body>
+    <header id="header">
+        <main>
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/img/logo/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <div class="logout">
+                    <a href="./signup.html">Login/Register</a>|
+                    <a href="./contact.html">Contact Us</a>|
+                    <a href="">Wishlist</a>
+                </div>
+                <menu>
+                    <ul id="menu" class="menu">
+                        <li><a href="./index.html">
+                            <i class="fa-solid fa-house"></i>
+                            HOME
+                        </a></li>
+                        <li><a href="./shop.html">SHOP</a></li>
+                        <li><a href="./blog.html">BLOG</a></li>
+                        <li><a href="./ourmenu.html">OUR MENU</a></li>
+                        <li class="other">
+                            <a href="">
+                                MORE
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul>
+                                <li><a href="./about.html">ABOUT US</a></li>
+                                <li><a href="./contact.html">CONTACT US</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </menu>
+                <div class="menu-mobile">
+                    <div class="menu-mobile-child">
+                        <span>Menu</span>
+                        <i id="menu-item" class="fa-solid fa-bars" onclick="showMenu()"></i>
+                    </div>
+                </div>
+            </nav>
+        </main>
+    </header>
+    <!-- Phần banner -->
+    <section class="main-section">
+        <div class="banner">
+            <div class="cart-search">
+                 <div class="cart">
+                    <div id="cart-child" class="cart-child">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>0 Items</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div id="cart-info">
+                        <p>No products in the cart.</p>
+                    </div>
+                </div>
+                <div class="search">
+                    <form action="">
+                        <input type="text" placeholder="Search Products...">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- container -->
+    <main class="container">
+        <h3>ABOUT US</h3>
+        <section class="section-child">
+            <div class="section-text">
+                <h4>Who We Are</h4>
+                <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
+                    Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate 
+                    eleifend tellus. Aenean leo ligula, porttitor eu, consequat 
+                    vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, 
+                    viverra quis, feugiat a, tellus. Phasellus viverra nulla ut 
+                    metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam 
+                    ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. 
+                    Nam eget dui. Etiam rhoncus.Aliquam lorem ante, dapibus in, viverra 
+                    quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. 
+                    Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. 
+                    Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+                    Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. 
+                    Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. 
+                    Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur 
+                    ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.Etiam 
+                    ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. 
+                    Nam eget dui. Etiam rhoncus.Aliquam lorem ante, dapibus in, 
+                    viverra quis, feugiat a, tellus. 
+                </p>
+            </div>
+            <div class="section-img">
+                <a href=""><img id="slide-img" src="./assets/img/gallery/gallery1.jpg" alt=""></a>
+            </div>
+        </section>
+        <section class="section-child2">
+            <div class="our-mission">
+                <h4>Our Mission</h4>
+                <p>
+                    Maecenas nec odio et ante tincidunt tempus. Donec 
+                    vitae sapien ut libero venenatis faucibus.
+                </p>
+                <a href="">Read more <i class="fa-solid fa-arrow-down fa-rotate-270"></i></a>
+            </div>
+            <div class="our-services">
+                <h4>Our-Services</h4>
+                <ul style="list-style-type: circle; margin-left: 20px;" >
+                    <li>Curabitur ullamcorper</li>
+                    <li>Aenean vulputate eleifend</li>
+                    <li>Sed fringilla mauris</li>
+                    <li>Cum sociis natoque</li>
+                </ul>
+            </div>
+            <div class="our-experience">
+                <h4>Our Experience</h4>
+                <ul>
+                    <li class="li1">Web Development - 80%</li>
+                    <li class="li2">Marketing & PR - 65%</li>
+                    <li class="li3">Web Designing - 70%</li>
+                    <li class="li4">Consulting - 45%</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section-child3">
+            <h4>Our Features</h4>
+            <div class="our-features">
+                <div class="html-css">
+                    <i class="fa-brands fa-html5"></i>
+                    <h5>HTML5 - CSS3</h5>
+                    <p>
+                        Meta komentofrazo ci cis, negativa 
+                        antaumetado la oni, havi frida aga ac.
+                    </p>
+                </div>
+                <div class="google">
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <h5>Google Rich Snippet</h5>
+                    <p>
+                        Meta komentofrazo ci cis, negativa 
+                        antaumetado la oni, havi frida aga ac.
+                    </p>
+                </div>
+                <div class="search-plus">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h5>SEO Optimized</h5>
+                    <p>
+                        Meta komentofrazo ci cis, negativa 
+                        antaumetado la oni, havi frida aga ac.
+                    </p>
+                </div>
+                <div class="seeting">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h5>Free Lifetime Support</h5>
+                    <p> 
+                        Meta komentofrazo ci cis, negativa
+                        antaumetado la oni, havi frida aga ac.
+                    </p>
+                </div>
+                <div class="a">
+                    <i class="fa-solid fa-a"></i>
+                    <h5>Multi Language</h5>
+                    <p>
+                        Meta komentofrazo ci cis, negativa
+                        antaumetado la oni, havi frida aga ac.
+                    </p>
+                </div>
+                <div class="desktop">
+                    <i class="fa-solid fa-desktop"></i>
+                    <h5>Smart Responsive</h5>
+                    <p>
+                        Meta komentofrazo ci cis, negativa
+                        antaumetado la oni, havi frida aga ac.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section-child4">
+            <div class="section-top">
+                <div class="our-client">
+                    <h4>Some of Our Clients</h4>
+                    <p>
+                        Over 55,000 students and companies, ranging from 
+                        beginners to professionals, user Tree house to 
+                        develop and improve their skills.
+                    </p>
+                </div>
+                <div class="testimonials">
+                    <h4>Testimonials</h4>
+                    <p>
+                        "There are many variations of passages of Loreum 
+                        Ipsum available, but the majority have suffered 
+                        There are many variations of."
+                    </p>
+                </div>
+            </div>
+            <div class="section-bottom">
+                <div class="about-img">
+                    <a href=""><img src="./assets/img/about/about1.png" alt=""></a>
+                    <a href=""><img src="./assets/img/about/about2.png" alt=""></a>
+                    <a href=""><img src="./assets/img/about/about3.png" alt=""></a>
+                    <a href=""><img src="./assets/img/about/about4.png" alt=""></a>
+                    <a href=""><img src="./assets/img/about/about5.png" alt=""></a>
+                    <a href=""><img src="./assets/img/about/about6.png" alt=""></a>
+                </div>
+                <div class="img-user">
+                    <div class="about-user">
+                        <img src="./assets/img/Thanh_duong1.jpg" alt="">
+                        <span>Leader</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-child5">
+            <h4>Our Team</h4>
+            <div class="my-team">
+                <div class="my-img">
+                    <div class="my-img-user">
+                        <img src="./assets/img/Thanh_duong1.jpg" alt="">
+                    </div>
+                </div>
+                <h5>Nguyen Thanh Duong</h5>
+                <i>Manager</i>
+                <div class="contact-icon">
+                    <a href="https://www.facebook.com/messi.nguyen.54966/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/Duong04" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <menu>
+            <ul class="menu-bottom">
+                <li><a href="./index.html">
+                    <i class="fa-solid fa-house"></i>
+                    HOME
+                </a></li>
+                <li><a href="./shop.html">SHOP</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./ourmenu.html">OUR MENU</a></li>
+                <li><a href="./about.html">ABOUT US</a></li>
+            </ul>
+            <div class="text-footer"><span>© 2023 copy right duongntpd07645</span></div>
+        </menu>
+    </footer>
+    <!-- javascript -->
+    <script src="./assets/js/about.js"></script>
+</body>
+</html>

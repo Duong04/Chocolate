@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./assets/img/fish.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/ourmenu.css">
+    <link rel="stylesheet" href="./assets/reponsive/ourmenu.css">
+</head>
+<body>
+     <!-- phần đầu trang -->
+     <header id="header">
+        <main>
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/img/logo/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <div class="logout">
+                    <a href="./signup.html">Login/Register</a>|
+                    <a href="./contact.html">Contact Us</a>|
+                    <a href="">Wishlist</a>
+                </div>
+                <menu>
+                    <ul id="menu" class="menu">
+                        <li><a href="./index.html">
+                            <i class="fa-solid fa-house"></i>
+                            HOME
+                        </a></li>
+                        <li><a href="./shop.html">SHOP</a></li>
+                        <li><a href="./blog.html">BLOG</a></li>
+                        <li><a href="./ourmenu.html">OUR MENU</i></a></li>
+                        <li class="other">
+                            <a href="">
+                                MORE
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul>
+                                <li><a href="./about.html">ABOUT US</a></li>
+                                <li><a href="./contact.html">CONTACT US</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </menu>
+                <div class="menu-mobile">
+                    <div class="menu-mobile-child">
+                        <span>Menu</span>
+                        <i id="menu-item" class="fa-solid fa-bars" onclick="showMenu()"></i>
+                    </div>
+                </div>
+            </nav>
+        </main>
+    </header>
+    <!-- Phần banner -->
+    <section class="main-section">
+        <div class="banner">
+            <div class="cart-search">
+                 <div class="cart">
+                    <div id="cart-child" class="cart-child">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>0 Items</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div id="cart-info">
+                        <p>No products in the cart.</p>
+                    </div>
+                </div>
+                <div class="search">
+                    <form action="">
+                        <input type="text" placeholder="Search Products...">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="slide-banner">
+                <a href=""><img class="slide" src="./assets/img/banner/banner3.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <h3 class="title-menu">OUR MENU</h3>
+    <article class="container">
+        <section class="menu-drink">
+            <div class="menu-drink-item">
+                <div class="text-menu-drink">
+                    <h5>COLD DRINKS</h5>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Quaerat eum sequi exercitationem ex itaque eius qui, 
+                        saepe aperiam maiores perspiciatis esse ipsam! Modi harum 
+                        iure earum sunt quod totam sint!
+                    </p>
+                    <div class="menu-drink-btn">
+                        <button>Oder now</button>
+                    </div>
+                </div>
+                <div class="menu-drink-img">
+                    <img src="./assets/img/menu/img1.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="chocolate">
+            <div class="menu-chocolate-item">
+                <div class="menu-chocolate-img">
+                    <img src="./assets/img/menu/img2.png" alt="">
+                </div>
+                <div class="text-menu-chocolate">
+                    <h5>CHOCOLATE</h5>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Quaerat eum sequi exercitationem ex itaque eius qui, 
+                        saepe aperiam maiores perspiciatis esse ipsam! Modi harum 
+                        iure earum sunt quod totam sint!
+                    </p>
+                    <div class="menu-chocolate-btn">
+                        <button>Oder now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu-drink">
+            <div class="menu-drink-item">
+                <div class="text-menu-drink">
+                    <h5>MILK TEA</h5>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Quaerat eum sequi exercitationem ex itaque eius qui, 
+                        saepe aperiam maiores perspiciatis esse ipsam! Modi harum 
+                        iure earum sunt quod totam sint!
+                    </p>
+                    <div class="menu-drink-btn">
+                        <button>Oder now</button>
+                    </div>
+                </div>
+                <div class="menu-drink-img">
+                    <img src="./assets/img/menu/img3.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="chocolate">
+            <div class="menu-chocolate-item">
+                <div class="menu-chocolate-img">
+                    <img src="./assets/img/menu/img4.png" alt="">
+                </div>
+                <div class="text-menu-chocolate">
+                    <h5>ICE CREAM</h5>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Quaerat eum sequi exercitationem ex itaque eius qui, 
+                        saepe aperiam maiores perspiciatis esse ipsam! Modi harum 
+                        iure earum sunt quod totam sint!
+                    </p>
+                    <div class="menu-chocolate-btn">
+                        <button>Oder now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="show-menu-cash">
+            <div class="show-menu-cash-item">
+                <div class="div1">
+                    <img src="./assets/img/menu-product/menu1.jpg" alt="">
+                </div>
+                <div class="div2">
+                    Milk Cucu Ach
+                </div>
+                <div class="div3"></div>
+                <div class="div4">$3.95</div>
+            </div>
+            <div class="show-menu-cash-item">
+                <div class="div1">
+                    <img src="./assets/img/menu-product/menu2.jpg" alt="">
+                </div>
+                <div class="div2">
+                    Caffe Latte
+                </div>
+                <div class="div3"></div>
+                <div class="div4">$1.95</div>
+            </div>
+            
+            <div class="show-menu-cash-item">
+                <div class="div1">
+                    <img src="./assets/img/menu-product/menu7.jpg" alt="">
+                </div>
+                <div class="div2">
+                    Avocado ice cream
+                </div>
+                <div class="div3"></div>
+                <div class="div4">$3.00</div>
+            </div>
+            <div class="show-menu-cash-item">
+                <div class="div1">
+                    <img src="./assets/img/menu-product/menu8.jpg" alt="">
+                </div>
+                <div class="div2">
+                    Smoothie ice cream
+                </div>
+                <div class="div3"></div>
+                <div class="div4">$3.50</div>
+            </div>
+            <div class="show-menu-cash-item">
+                <div class="div1">
+                    <img src="./assets/img/menu-product/menu9.jpg" alt="">
+                </div>
+                <div class="div2">
+                    Pearl milk tea
+                </div>
+                <div class="div3"></div>
+                <div class="div4">$5.35</div>
+            </div>
+            <div class="show-menu-cash-item">
+                <div class="div1">
+                    <img src="./assets/img/menu-product/menu10.jpg" alt="">
+                </div>
+                <div class="div2">
+                    Traditional milk tea
+                </div>
+                <div class="div3"></div>
+                <div class="div4">$5.50</div>
+            </div>
+            <div class="show-menu-cash-item">
+                <div class="div1">
+                    <img src="./assets/img/menu-product/menu3.jpg" alt="">
+                </div>
+                <div class="div2">
+                    Adipiscing sem
+                </div>
+                <div class="div3"></div>
+                <div class="div4">$499.00</div>
+            </div>
+            <div class="show-menu-cash-item">
+                <div class="div1">
+                    <img src="./assets/img/menu-product/menu4.png" alt="">
+                </div>
+                <div class="div2">
+                    Nunc adipiscing
+                </div>
+                <div class="div3"></div>
+                <div class="div4">$599.00</div>
+            </div>
+            <div class="show-menu-cash-item">
+                <div class="div1">
+                    <img src="./assets/img/menu-product/menu5.jpg" alt="">
+                </div>
+                <div class="div2">
+                    Dapibus in viverra
+                </div>
+                <div class="div3"></div>
+                <div class="div4">$699.00</div>
+            </div>
+            <div class="show-menu-cash-item">
+                <div class="div1">
+                    <img src="./assets/img/menu-product/menu6.jpg" alt="">
+                </div>
+                <div class="div2">
+                    Cras eget augue
+                </div>
+                <div class="div3"></div>
+                <div class="div4">$899.00</div>
+            </div>
+        </section>
+    </article>
+    <!-- footer -->
+    <footer>
+        <menu>
+            <ul class="menu-bottom">
+                <li><a href="./index.html">
+                    <i class="fa-solid fa-house"></i>
+                    HOME
+                </a></li>
+                <li><a href="./shop.html">SHOP</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./ourmenu.html">OUR MENU</a></li>
+                <li><a href="./about.html">ABOUT US</a></li>
+            </ul>
+            <div class="text-footer"><span>© 2023 copy right duongntpd07645</span></div>
+        </menu>
+    </footer>
+    <script src="./assets/js/ourmenu.js"></script>
+</body>
+</html>

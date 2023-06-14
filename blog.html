@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./assets/img/fish.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    <link rel="stylesheet" href="./assets/reponsive/reponsive3.css">
+</head>
+<body>
+    <header id="header">
+        <main>
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/img/logo/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <div class="logout">
+                    <a href="./signup.html">Login/Register</a>|
+                    <a href="./contact.html">Contact Us</a>|
+                    <a href="">Wishlist</a>
+                </div>
+                <menu>
+                    <ul id="menu" class="menu">
+                        <li><a href="./index.html">
+                            <i class="fa-solid fa-house"></i>
+                            HOME
+                        </a></li>
+                        <li><a href="./shop.html">SHOP</a></li>
+                        <li><a href="./blog.html">BLOG</a></li>
+                        <li><a href="./ourmenu.html">OUR MENU</a></li>
+                        <li class="other">
+                            <a href="">
+                                MORE
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul>
+                                <li><a href="./about.html">ABOUT US</a></li>
+                                <li><a href="">CONTACT US</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </menu>
+                <div class="menu-mobile">
+                    <div class="menu-mobile-child">
+                        <span>Menu</span>
+                        <i id="menu-item" class="fa-solid fa-bars" onclick="showMenu()"></i>
+                    </div>
+                </div>
+            </nav>
+        </main>
+    </header>
+    <!-- Phần banner -->
+    <section class="main-section">
+        <div class="banner">
+            <div class="cart-search">
+                 <div class="cart">
+                    <div id="cart-child" class="cart-child">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>0 Items</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div id="cart-info">
+                        <p>No products in the cart.</p>
+                    </div>
+                </div>
+                <div class="search">
+                    <form action="">
+                        <input type="text" placeholder="Search Products...">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- container -->
+    <main class="container">
+        <aside id="aside">
+            <section class="recent-posts">
+                <i onclick="openText1()" id="i1" class="fa-solid fa-chevron-down"></i>
+                <h3>RECENT POSTS</h3>
+                <ul id="content-text">
+                    <li><a href="">Post Format: Standard</a></li>
+                    <li><a href="">Post Format: Image (Linked)</a></li>
+                    <li><a href="">Post Format: Audio</a></li>
+                    <li><a href="">Post Format: Video (YouTube)</a></li>
+                    <li><a href="">Post Format: Aside</a></li>
+                </ul>
+            </section>
+            <section class="archives">
+                <i onclick="openText2()" id="i2" class="fa-solid fa-chevron-down"></i>
+                <h3>ARCHIVES</h3>
+                <ul id="content-text2">
+                    <li><a href="">June 2014</a></li>
+                    <li><a href="">August 2010</a></li>
+                    <li><a href="">July 2010</a></li>
+                    <li><a href="">June 2010</a></li>
+                    <li><a href="">May 2010</a></li>
+                    <li><a href="">April 2010</a></li>
+                    <li><a href="">March 2010</a></li>
+                    <li><a href="">February 2010</a></li>
+                    <li><a href="">January 2010</a></li>
+                    <li><a href="">October 2009</a></li>
+                    <li><a href="">July 2009</a></li>
+                </ul>
+            </section>
+            <section class="categories">
+                <i onclick="openText3()" id="i3" class="fa-solid fa-chevron-down"></i>
+                <h3>CATEGORIES</h3>
+                <ul id="content-text3">
+                    <li><a href="">Camera</a></li>
+                    <li><a href="">Uncategorized</a></li>
+                    <li><a href="">ween</a></li>
+                    <li><a href="">wellhead</a></li>
+                    <li><a href="">wellintentioned</a></li>
+                    <li><a href="">whetstone</a></li>
+                    <li><a href="">years</a></li>
+                </ul>
+            </section>
+            <section class="meta">
+                <i onclick="openText4()" id="i4" class="fa-solid fa-chevron-down"></i>
+                <h3>META</h3>
+                <ul id="content-text4">
+                    <li><a href="">Log in</a></li>
+                    <li><a href="">Entries feed</a></li>
+                    <li><a href="">Comments feed</a></li>
+                    <li><a href="">WordPress.org</a></li>
+                </ul>
+            </section>
+        </aside>
+        <article id="article">
+            <h4>BLOG</h4>
+            <section class="section1">
+                <div class="blog-img">
+                    <img src="./assets/img/img_article/img1.jpg" alt="">
+                </div>
+                <div class="blog-container">
+                    <div class="blog-title">
+                        <a href="">Post Format: Standard</a>
+                    </div>
+                    <div class="blog-link">
+                        <a href=""><i class="fa-regular fa-clock"></i> 20 Jun</a>
+                        <a href=""><i class="fa-regular fa-folder"></i> Ween</a>
+                        <a href=""><i class="fa-solid fa-user"></i> Admin</a>
+                        <a href=""><i class="fa-solid fa-comment"></i> Leave a Comment</a>
+                    </div>
+                    <p class="blog-text">
+                        All children, except one, grow up. They soon know that they 
+                        will grow up, and the way Wendy knew was this. One day when 
+                        she was two years old she was playing in a garden, and she 
+                        plucked another flower and ran with it to her mother. I suppose 
+                        she must have looked rather delightful, for Mrs. Darling put 
+                        her hand to her heart and cried, “Oh, why can't you remain like 
+                        this for .
+                    </p>
+                    <form action="">
+                        <button>Read more</button>
+                    </form>
+                </div>
+            </section>
+            <section class="section2">
+                <div class="blog-img">
+                    <img src="./assets/img/img_article/img2.jpg" alt="">
+                </div>
+                <div class="blog-container">
+                    <div class="blog-title">
+                        <a href="">Post Format: Image (Linked)</a>
+                    </div>
+                    <div class="blog-link">
+                        <a href=""><i class="fa-regular fa-clock"></i> 6 Aug</a>
+                        <a href=""><i class="fa-solid fa-image"></i> Images</a>
+                        <a href=""><i class="fa-solid fa-camera"></i> Camera</a>
+                        <a href=""><i class="fa-solid fa-tag"></i> Post Formats</a>
+                        <a href=""><i class="fa-solid fa-user"></i> Admin</a>
+                    </div>
+                    <p class="blog-text">
+                        Mrs. Darling first heard of Peter when she was tidying up her children's 
+                        minds. It is the nightly custom of every good mother after her children 
+                        are asleep to rummage in their minds and put things straight for next 
+                        morning, repacking into their proper places the many articles that have 
+                        wandered during the day.
+                    </p>
+                </div>
+            </section>
+            <section class="section3">
+                <div class="blog-img">
+                    <img src="./assets/img/img_article/img3.jpg" alt="">
+                </div>
+                <div class="blog-container">
+                    <div class="blog-title">
+                        <a href="">Post Format: Audio</a>
+                    </div>
+                    <div class="blog-link">
+                        <a href=""><i class="fa-regular fa-clock"></i> 2 Jul</a>
+                        <a href=""><i class="fa-solid fa-play"></i> Audio</a>
+                        <a href=""><i class="fa-regular fa-folder"></i> Uncategorized</a>
+                        <a href=""><i class="fa-solid fa-tag"></i> shortcode</a>
+                        <a href=""><i class="fa-solid fa-user"></i> Admin</a>
+                    </div>
+                    <div class="blog-text">
+                        Link: <a href="">St. Louis Blues</a>
+                    </div>
+                    <p class="blog-text" style="margin-top: 10px;">Audio shortcode:</p>
+                </div>
+            </section>
+            <section class="section4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/k71g_GojFQ0?start=3" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                 allowfullscreen></iframe>
+                 <div class="blog-title">
+                    <a href="">Post Format: Video (YouTube)</a>
+                </div>
+                <div class="blog-link">
+                    <a href=""><i class="fa-regular fa-clock"></i> 2 Jun</a>
+                    <a href=""><i class="fa-solid fa-play"></i> Video</a>
+                    <a href=""><i class="fa-regular fa-folder"></i> Uncategorized</a>
+                    <a href=""><i class="fa-solid fa-tag"></i> shortcode</a>
+                    <a href=""><i class="fa-solid fa-user"></i> Admin</a>
+                </div>
+            </section>
+            <section class="section5">
+                <div class="blog-img">
+                    <img src="./assets/img/img_article/img4.jpg" alt="">
+                </div>
+                <div class="blog-container">
+                    <div class="blog-title">
+                        <a href="">Post Format: Aside</a>
+                    </div>
+                    <div class="blog-link">
+                        <a href=""><i class="fa-regular fa-clock"></i> 2 Jul</a>
+                        <a href=""><i class="fa-solid fa-play"></i> Audio</a>
+                        <a href=""><i class="fa-regular fa-folder"></i> Uncategorized</a>
+                        <a href=""><i class="fa-solid fa-tag"></i> shortcode</a>
+                        <a href=""><i class="fa-solid fa-user"></i> Admin</a>
+                    </div>
+                    <p class="blog-text" style="margin-top: 10px;">
+                        “I never tried to prove nothing, just wanted to give a 
+                        good show. My life has always been my music, it's always 
+                        come first, but the music ain't worth nothing if you can't 
+                        lay it on the public. The main thing is to live for that audience, 
+                        'cause what you're there for is to please the people.”
+                    </p>
+                </div>
+            </section>
+            <section class="section6">
+                <div class="blog-img">
+                    <img src="./assets/img/img_article/img5.jpg" alt="">
+                </div>
+                <div class="blog-container">
+                    <div class="blog-title">
+                        <a href="">Post Format: Status</a>
+                    </div>
+                    <div class="blog-link">
+                        <a href=""><i class="fa-regular fa-clock"></i> 4 Apr</a>
+                        <a href=""><i class="fa-regular fa-folder"></i> Uncategorized</a>
+                        <a href=""><i class="fa-solid fa-tag"></i> Post Formats</a>
+                        <a href=""><i class="fa-solid fa-user"></i> Admin</a>
+                    </div>
+                    <p class="blog-text" style="margin-top: 10px;">
+                        WordPress, how do I love thee? Let me count the ways (in 140 characters or less). 
+                    </p>
+                </div>
+            </section>
+            <section class="section6">
+                <div class="blog-img">
+                    <img src="./assets/img/img_article/img6.jpg" alt="">
+                </div>
+                <div class="blog-container">
+                    <div class="blog-title">
+                        <a href="">Post Format: Quote</a>
+                    </div>
+                    <div class="blog-link">
+                        <a href=""><i class="fa-regular fa-clock"></i> 4 Apr</a>
+                        <a href=""><i class="fa-regular fa-folder"></i> Uncategorized</a>
+                        <a href=""><i class="fa-solid fa-tag"></i> quote</a>
+                        <a href=""><i class="fa-solid fa-user"></i> Admin</a>
+                    </div>
+                    <p class="blog-text" style="margin-top: 10px;">
+                        Only one thing is impossible for God: To find any sense in any copyright law on the planet.
+                    </p>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!-- footer -->
+    <footer>
+        <menu>
+            <ul class="menu-bottom">
+                <li><a href="./index.html">
+                    <i class="fa-solid fa-house"></i>
+                    HOME
+                </a></li>
+                <li><a href="./shop.html">SHOP</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./ourmenu.html">OUR MENU</a></li>
+                <li><a href="./about.html">ABOUT US</a></li>
+            </ul>
+            <div class="text-footer"><span>© 2023 copy right duongntpd07645</span></div>
+        </menu>
+    </footer>
+    <script src="./assets/js/blog.js"></script>
+</body>
+</html>

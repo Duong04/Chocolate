@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate</title>
+    <link rel="icon" href="./assets/img/fish.png" type="image/x-icon">
+    <link rel="icon" href="./assets/img/fish.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/reponsive/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+</head>
+<body>
+        <!-- phần đầu trang -->
+        <header id="header">
+            <main>
+                <div class="logo">
+                    <a href="./index.html"><img src="./assets/img/logo/logo.png" alt=""></a>
+                </div>
+                <nav>
+                    <div class="logout">
+                        <a href="./signup.html">Login/Register</a>|
+                        <a href="./contact.html">Contact Us</a>|
+                        <a href="">Wishlist</a>
+                    </div>
+                    <menu>
+                        <ul id="menu" class="menu">
+                            <li><a href="./index.html">
+                                <i class="fa-solid fa-house"></i>
+                                HOME
+                            </a></li>
+                            <li><a href="./shop.html">SHOP</a></li>
+                            <li><a href="./blog.html">BLOG</a></li>
+                            <li><a href="./ourmenu.html">OUR MENU</i></a></li>
+                            <li class="other">
+                                <a href="">
+                                    MORE
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="./about.html">ABOUT US</a></li>
+                                    <li><a href="./contact.html">CONTACT US</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </menu>
+                    <div class="menu-mobile">
+                        <div class="menu-mobile-child">
+                            <span>Menu</span>
+                            <i id="menu-item" class="fa-solid fa-bars" onclick="showMenu()"></i>
+                        </div>
+                    </div>
+                </nav>
+            </main>
+        </header>
+        <!-- Phần banner -->
+        <section class="main-section">
+            <div class="banner">
+                <div class="cart-search">
+                     <div class="cart">
+                        <div id="cart-child" class="cart-child">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>0 Items</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <div id="cart-info">
+                            <p>No products in the cart.</p>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <form action="">
+                            <input type="text" placeholder="Search Products...">
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="slide-banner">
+                    <a href=""><img class="slide" src="./assets/img/banner/banner1.png" alt=""></a>
+                    <a href=""><img class="slide" src="./assets/img/banner/banner2.png" alt=""></a>
+                    <a href=""><img class="slide" src="./assets/img/banner/banner3.png" alt=""></a>
+                    <div class="btn-left-right">
+                        <button onclick="plusDivs(-1)" class="btn-left"><i class="fa-solid fa-angle-down fa-rotate-90"></i></button>
+                        <button onclick="plusDivs(1)" class="btn-right"><i class="fa-solid fa-angle-down fa-rotate-270"></i></button>
+                    </div>
+                    <ul class="btn-circle">
+                        <li class="btn1 btn" onclick="currentDiv(1)"><i class="fa-solid fa-circle"></i></li>
+                        <li class="btn2 btn" onclick="currentDiv(2)"><i class="fa-solid fa-circle"></i></li>
+                        <li class="btn3 btn" onclick="currentDiv(3)"><i class="fa-solid fa-circle"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- article -->
+        <article>
+            <section class="section1">
+                <a href=""><img src="./assets/img/banner2/top_banner1.png" alt=""></a>
+                <a href=""><img src="./assets/img/banner2/top_banner2.png" alt=""></a>
+                <a href=""><img src="./assets/img/banner2/top_banner3.png" alt=""></a>
+            </section>
+            <section class="section2">
+                <h3>Featured</h3>
+                <div class="product">
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <span>Quick View</span>
+                                <img src="./assets/img/product/product1.png" alt="">
+                            </a>
+                        </div>
+                        <a href="">Pellentesque augue just</a>
+                        <p>
+                            <del>$260.00</del>
+                            <span>$200.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/product/product2.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">eget vulputate</a>
+                        <p>
+                            <del>$1.000.00</del>
+                            <span>$999.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/product/product3.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">parturient montes</a>
+                        <p>
+                            <del>$980.00</del>
+                            <span>$80.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/product/product4.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">venenatis non</a>
+                        <p>
+                            <del>$1.150.00</del>
+                            <span>$1.000.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/product/product5.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">Curabitur sit amet</a>
+                        <p>
+                            <del>$980.00</del>
+                            <span>$80.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/product/product6.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">dapibus leo</a>
+                        <p>
+                            <del>$1.150.00</del>
+                            <span>$1.000.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/product/product7.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">massa quam</a>
+                        <p>
+                            <del>$1.000.00</del>
+                            <span>$999.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/product/product8.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">Nunc adipiscing</a>
+                        <p>
+                            <del>$700.00</del>
+                            <span>$599.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="section3">
+                <h3>BLOG POST</h3>
+                <div class="product2">
+                    <div class="product-child2">
+                        <div class="box-product">
+                            <form action="" class="box-hover">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-link"></i></button>
+                            </form>
+                            <img src="./assets/img/product2/img1.jpg" alt="">
+                        </div>
+                        <div class="box-orange">
+                            <span><i class="fa-solid fa-user"></i> admin</span>&nbsp;
+                            <span><i class="fa-solid fa-calendar-days"></i> 20 june 2014</span>
+                        </div>
+                        <a href="">Post Format: Standard</a>
+                        <p>All children, except one, grow up. They soon know that they will grow up, and the way ...</p>
+                        <i><i class="fa-regular fa-comments"></i>&nbsp; Leave a comment </i>
+                    </div>
+                    <div class="product-child2">
+                        <div class="box-product">
+                            <form action="" class="box-hover">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-link"></i></button>
+                            </form>
+                            <img src="./assets/img/product2/img2.jpg" alt="">
+                        </div>
+                        <div class="box-orange">
+                            <span><i class="fa-solid fa-user"></i> admin</span>&nbsp;
+                            <span><i class="fa-solid fa-calendar-days"></i> 6 August 2010</span>
+                        </div>
+                        <a href="">Post Format: Image (Linked)</a>
+                        <p>Mrs. Darling first heard of Peter when she was tidying up her children's minds. It is the ...</p>
+                        <i><i class="fa-regular fa-comments"></i>&nbsp; Leave a comment </i>
+                    </div>
+                    <div class="product-child2">
+                        <div class="box-product">
+                            <form action="" class="box-hover">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-link"></i></button>
+                            </form>
+                            <img src="./assets/img/product2/img3.jpg" alt="">
+                        </div>
+                        <div class="box-orange">
+                            <span><i class="fa-solid fa-user"></i> admin</span>&nbsp;
+                            <span><i class="fa-solid fa-calendar-days"></i> 2 July 2010</span>
+                        </div>
+                        <a href="">Post Format: Audio</a>
+                        <p>Link: St. Louis Blues Audio shortcode:</p>
+                        <i><i class="fa-regular fa-comments"></i>&nbsp; Leave a comment </i>
+                    </div>
+                    <div class="product-child2">
+                        <div class="box-product">
+                            <form action="" class="box-hover">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-link"></i></button>
+                            </form>
+                            <img src="./assets/img/product2/img4.jpg" alt="">
+                        </div>
+                        <div class="box-orange">
+                            <span><i class="fa-solid fa-user"></i> admin</span>&nbsp;
+                            <span><i class="fa-solid fa-calendar-days"></i> 2 june 2010</span>
+                        </div>
+                        <a href="">Post Format: Video (Youtube)</a>
+                        <br>
+                        <i><i class="fa-regular fa-comments"></i>&nbsp; Leave a comment </i>
+                    </div>
+                    <div class="product-child2">
+                        <div class="box-product">
+                            <form action="" class="box-hover">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-link"></i></button>
+                            </form>
+                            <img src="./assets/img/product2/img5.jpg" alt="">
+                        </div>
+                        <div class="box-orange">
+                            <span><i class="fa-solid fa-user"></i> admin</span>&nbsp;
+                            <span><i class="fa-solid fa-calendar-days"></i> 9 May 2010</span>
+                        </div>
+                        <a href="">Post Format: Standard</a>
+                        <p>“I never tried to prove nothing, just wanted to give a good show. My life has always ...</p>
+                        <i><i class="fa-regular fa-comments"></i>&nbsp; Leave a comment </i>
+                    </div>
+                    <div class="product-child2">
+                        <div class="box-product">
+                            <form action="" class="box-hover">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button><i class="fa-solid fa-link"></i></button>
+                            </form>
+                            <img src="./assets/img/product2/img2.jpg" alt="">
+                        </div>
+                        <div class="box-orange">
+                            <span><i class="fa-solid fa-user"></i> admin</span>&nbsp;
+                            <span><i class="fa-solid fa-calendar-days"></i> 6 August 2010</span>
+                        </div>
+                        <a href="">Post Format: Image (Linked)</a>
+                        <p>Mrs. Darling first heard of Peter when she was tidying up her children's minds. It is the ...</p>
+                        <i><i class="fa-regular fa-comments"></i>&nbsp; Leave a comment </i>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!-- footer -->
+        <footer>
+            <menu>
+                <ul class="menu-bottom">
+                    <li><a href="./index.html">
+                        <i class="fa-solid fa-house"></i>
+                        HOME
+                    </a></li>
+                    <li><a href="./shop.html">SHOP</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./gallery.html">OUR MENU</a></li>
+                    <li><a href="./about.html">ABOUT US</a></li>
+                </ul>
+                <div class="text-footer"><span>© 2023 copy right duongntpd07645</span></div>
+            </menu>
+        </footer>
+        <!-- js -->
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./assets/img/fish.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/shop.css">
+    <link rel="stylesheet" href="./assets/reponsive/reponsive2.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+        <main>
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/img/logo/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <div class="logout">
+                    <a href="./signup.html">Login/Register</a>|
+                    <a href="./contact.html">Contact Us</a>|
+                    <a href="">Wishlist</a>
+                </div>
+                <menu>
+                    <ul id="menu" class="menu">
+                        <li><a href="./index.html">
+                            <i class="fa-solid fa-house"></i>
+                            HOME
+                        </a></li>
+                        <li><a href="./shop.html">SHOP</a></li>
+                        <li><a href="./blog.html">BLOG</a></li>
+                        <li><a href="./ourmenu.html">OUR MENU</a></li>
+                        <li class="other">
+                            <a href="">
+                                MORE
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul>
+                                <li><a href="./about.html">ABOUT US</a></li>
+                                <li><a href="./contact.html">CONTACT US</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </menu>
+                <div class="menu-mobile">
+                    <div class="menu-mobile-child">
+                        <span>Menu</span>
+                        <i id="menu-item" class="fa-solid fa-bars" onclick="showMenu()"></i>
+                    </div>
+                </div>
+            </nav>
+        </main>
+    </header>
+    <!-- Phần banner -->
+    <section class="main-section">
+        <div class="banner">
+            <div class="cart-search">
+                 <div class="cart">
+                    <div id="cart-child" class="cart-child">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>0 Items</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div id="cart-info">
+                        <p>No products in the cart.</p>
+                    </div>
+                </div>
+                <div class="search">
+                    <form action="">
+                        <input type="text" placeholder="Search Products...">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- container -->
+    <main class="container">
+        <!-- aside -->
+        <aside id="aside">
+            <section class="categories">
+                <i onclick="openContent()" id="i1" class="fa-solid fa-chevron-down"></i>
+                <h3>PRODUCT CATEGORIES</h3>
+                <ul id="categories-child">
+                    <li><a href="">Books and Media</a></li>
+                    <li><a href="">Brownie</a></li>
+                    <li><a href="">Chocolate Candy</a></li>
+                    <li><a href="">dark chocolate</a></li>
+                    <li><a href="">Living</a></li>
+                    <li><a href="">Uncategorized</a></li>
+                    <li><a href="">Watches</a></li>
+                </ul>
+            </section>
+            <section class="by-price">
+                <i onclick="openInput()" id="i2" class="fa-solid fa-chevron-down"></i>
+                <h3>FILTER BY PRICE</h3>
+                <form id="form" action="">
+                    <input id="price" type="range" value="0">
+                    <button>Filter</button>
+                    <div class="input">
+                        Price:$80 - 
+                        <span id="input-price">$0</span>
+                    </div>
+                </form>
+            </section>
+            <section class="aside-img">
+                <a href="">
+                    <img src="./assets/img/img_left/leftbanner.jpg" alt="">
+                </a>
+            </section>
+            <section class="product-tags">
+                <i onclick="openProduct()" id="i3" class="fa-solid fa-chevron-down"></i>
+                <h3>PRODUCT TAGS</h3>
+                <div id="product-link" class="product-link">
+                    <a href="">adipiscing</a>
+                    <a href="">amet</a>
+                    <a href="">Antiopam</a>
+                    <a href="">Appetere</a>
+                    <a href="">augue</a>
+                    <a href="">Constituto</a>
+                    <a href="">Cras</a>
+                    <a href="">Curabitur</a>
+                    <a href="">Dapibus</a>
+                    <a href="">Doming</a>
+                    <a href="">eget</a>
+                    <a href="">eleifend</a>
+                    <a href="">Etiam</a>
+                    <a href="">Fierent</a>
+                    <a href="">Honestatis</a>
+                    <a href="">massa</a>
+                    <a href="">Mauris</a>
+                    <a href="">non</a>
+                    <a href="">Nunc</a>
+                    <a href="">quam</a>
+                    <a href="">sem</a>
+                    <a href="">tristique</a>
+                    <a href="">venenatis</a>
+                    <a href="">viverra</a>
+                </div>
+            </section>
+            <section class="rated-products">
+                <i onclick="openRated()" id="i4" class="fa-solid fa-chevron-down"></i>
+                <h3>TOP RATED PRODUCTS</h3>
+                <div id="rated">
+                    <div class="rated-products-child1">
+                        <a href="">
+                            <img src="./assets/img/img_left/img_left1.png" alt="">
+                        </a>
+                        <p>
+                            <a href="">Curabitur sit amet</a>
+                            <br>
+                            <span>$80.00</span>
+                        </p>
+                    </div>
+                    <div class="rated-products-child1">
+                        <a href="">
+                            <img src="./assets/img/img_left/img_left2.png" alt="">
+                        </a>
+                        <p>
+                            <a href="">venenatis non</a>
+                            <br>
+                            <span>$1.000.00</span>
+                        </p>
+                    </div>
+                    <div class="rated-products-child1">
+                        <a href="">
+                            <img src="./assets/img/img_left/img_left3.png" alt="">
+                        </a>
+                        <p>
+                            <a href="">parturient montes</a>
+                            <br>
+                            <span>$80.00</span>
+                        </p>
+                    </div>
+                    <div class="rated-products-child1">
+                        <a href="">
+                            <img src="./assets/img/img_left/img_left4.png" alt="">
+                        </a>
+                        <p>
+                            <a href="">dapibus leo</a>
+                            <br>
+                            <span>$1.000.00</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </aside>
+        <!-- article -->
+        <article id="article">
+            <h4 class="title-shop">SHOP</h4>
+            <section id="section-top" class="section-top">
+                <div class="product">
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <span>Quick View</span>
+                                <img src="./assets/img/img_section_top/img1.png" alt="">
+                            </a>
+                        </div>
+                        <a href="">Adipiscing sem</a>
+                        <p>
+                            <del>$650.00</del>
+                            <span>$499.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/img_section_top/img2.jpg" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">Cras eget augue</a>
+                        <p>
+                            <del>$1.000.00</del>
+                            <span>$899.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/img_section_top/img3.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">Curabitur sit amet</a>
+                        <p>
+                            <del>$980.00</del>
+                            <span>$80.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/img_section_top/img4.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">Dapibus in viverra</a>
+                        <p>
+                            <del>$700.00</del>
+                            <span>$699.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/img_section_top/img5.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">dapibus leo</a>
+                        <p>
+                            <del>$1.150.00</del>
+                            <span>$1.000.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/img_section_top/img6.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">eget vulputate</a>
+                        <p>
+                            <del>$1.000.00</del>
+                            <span>$999.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/img_section_top/img7.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">Etiam tristique</a>
+                        <p>
+                            <del>$1.150.00</del>
+                            <span>$1.000.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/img_section_top/img8.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">massa quam</a>
+                        <p>
+                            <del>$1.000.00</del>
+                            <span>$999.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/img_section_top/img9.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">Mauris eleifend</a>
+                        <p>
+                            <del>$650.00</del>
+                            <span>$550.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/img_section_top/img10.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">Nunc adipiscing</a>
+                        <p>
+                            <del>$700.00</del>
+                            <span>$599.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/img_section_top/img11.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">parturient montes</a>
+                        <p>
+                            <del>$980.00</del>
+                            <span>$80.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                    <div class="product-child1">
+                        <span>sale</span>
+                        <div class="hover-img">
+                            <a class="link-img" href="">
+                                <img src="./assets/img/img_section_top/img12.png" alt="">
+                                <span>Quick View</span>
+                            </a>
+                        </div>
+                        <a href="">Pellentesque augue just</a>
+                        <p>
+                            <del>$260.00</del>
+                            <span>200.00</span>
+                        </p>
+                        <form action="">
+                            <button>Add To Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!-- footer -->
+    <footer>
+        <menu>
+            <ul class="menu-bottom">
+                <li><a href="./index.html">
+                    <i class="fa-solid fa-house"></i>
+                    HOME
+                </a></li>
+                <li><a href="./shop.html">SHOP</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./ourmenu.html">OUR MENU</a></li>
+                <li><a href="./about.html">ABOUT US</a></li>
+            </ul>
+            <div class="text-footer"><span>© 2023 copy right duongntpd07645</span></div>
+        </menu>
+    </footer>
+    <!-- javascript -->
+    <script src="./assets/js/shop.js"></script>
+</body>
+</html>

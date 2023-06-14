@@ -1,0 +1,502 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color: #777777;
+    --white-color: #fff;
+    --black-color: #000;
+    --orange-color: #D15F31;
+    --grey-color: #ccc;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+body{
+    font-family: system-ui;
+    display: block;
+}
+
+
+/* Phần đâu trang */
+#header{
+    width: 100%;
+    height: 140px;
+    background-image: url(../img/background_pattern.jpg);
+}
+
+main{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    margin-top: 30px;
+    width: 90%;
+}
+
+nav{
+    height: 135px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.logout{
+   align-self: flex-end;
+   margin-top: 10px;
+   color: var(--text-color);
+}
+
+.logout a{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.0rem;
+}
+
+.logout a:hover{
+    text-decoration: underline;
+    color: #bc482f;
+}
+
+.logout a:last-child{
+    margin-right: 0;
+}
+
+.menu{
+    width: auto;
+}
+
+.other{
+    position: relative;
+}
+
+
+.menu>li{
+    display: inline-block;
+    list-style: none;
+}
+
+.menu>li>a{
+    display: inline-block;
+    padding: 10px;
+    color: #bc482f;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+}
+
+.menu>li>a:hover{
+    background-color: var(--white-color);
+    color: #5a3320;
+}
+
+.other ul{
+    display: none;
+    position: absolute;
+    width: 120px;
+    height: auto;
+    background-color: #edeae1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 10;
+}
+
+.other ul li{
+    list-style: none;
+    height: 40px;
+}
+
+.other>ul>li>a{
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.other>ul>li>a:hover{
+    color: #fff;
+    background: #c9ad88;
+}
+
+.other:hover ul{
+    display: block;
+    animation: anima ease 0.4s;
+    -webkit-animation: anima ease 0.4s;
+}
+
+@keyframes anima{
+    from{
+        opacity: 0;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }to{
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+.menu-mobile{
+    margin: auto;
+    width: 93%;
+    height: 53px;
+    border: 1px solid var(--grey-color);
+    border-radius: 5px;
+    background-color: var(--white-color);
+    display: none;
+    z-index: 12;
+}
+
+.menu-mobile-child{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    color: var(--orange-color);
+}
+
+#menu-item{
+    cursor: pointer;
+}
+
+@keyframes madalFadeIn {
+    from{
+       opacity: 0;
+       transform: translateY(-14px);
+       -webkit-transform: translateY(-14px);
+    }
+    to{
+       opacity: 1;
+       transform: translateY(0);
+       -webkit-transform: translateY(0);
+    }
+}
+/* container */
+.container{
+    width: 1000px;
+    height: 800px;
+}
+
+.login{
+    width: 55%;
+    height: auto;
+    position: relative;
+    margin: auto;
+    background-image: url(../img/background_pattern.jpg);
+    border: 1px solid var(--grey-color);
+    border-radius: 5px;
+}
+
+.login h3{
+    text-align: center;
+    margin: 35px 0;
+}
+
+.login form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login input{
+    width: 75%;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.login input:focus{
+    outline: none;
+    border: none;
+    box-shadow: 0 0 2px var(--orange-color);
+}
+
+.login button{
+    width: 75%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login button:hover{
+    opacity: 0.7;
+}
+
+.pass-word{
+    width: 75%;
+    position: relative;
+}
+
+.pass-word input{
+    width: 100%;
+}
+
+.pass-word i{
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.q-pass{
+    float: right;
+    margin: 10px 88px 20px 0;
+    font-size: 0.9rem;
+}
+
+.q-pass a:hover{
+    color: var(--orange-color);
+    text-decoration: underline;
+}
+
+.or-dash{
+    width: 75%;
+    margin: auto;
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dash-left{
+    width: 45%;
+    height: 1px;
+    background-color: var(--grey-color);
+}
+
+.dash-right{
+    width: 45%;
+    height: 1px;
+    background-color: var(--grey-color);
+}
+
+.dash-text{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.box-fb-gg{
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-gg,
+.box-fb{
+    width: 47%;
+    height: 40px;
+    margin: auto;
+    border: 1px solid var(--text-color);
+    background-color: var(--white-color);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.box-gg img,
+.box-fb img{
+    width: 15%;
+}
+
+.box-gg:hover,
+.box-fb:hover{
+    opacity: 0.8;
+}
+
+.link-signup{
+    width: 45%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.link-signup span{
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.link-signup a{
+    color: var(--orange-color);
+    font-weight: 550;
+}
+
+.link-signup a:hover{
+    text-decoration: underline;
+}
+
+.login-link-qr{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+.login-qr{
+    position: relative;
+    width: 160px;
+    height: 60px;
+    padding: 10px 15px;
+    border: 2px solid var(--orange-color);
+    font-size: 0.9rem;
+    background-color: #e5c4b7;
+    color: var(--orange-color);
+    font-weight: 650;
+    margin-right: 20px;
+}
+
+.login-qr::after{
+    position: absolute;
+    content: "";
+    box-sizing: border-box;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-top: 2px solid var(--orange-color);
+    border-right: 2px solid var(--orange-color);
+    top: 60%;
+    right: -0.75rem;
+    background-color: #e5c4b7;
+    transform: rotate(45deg) translateX(-50%);
+    -webkit-transform: rotate(45deg) translateX(-50%);
+}
+
+.img-qr{
+    font-size: 4.5rem;
+    margin-right: 5px;
+    cursor: pointer;
+    color: var(--orange-color);
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: #281B1A;
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer>menu{
+    position: relative;
+    top: 20px;
+}
+
+.menu-bottom{
+    width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-bottom li{
+    display: inline-block;
+    color: var(--white-color);
+}
+
+.menu-bottom li a{
+    color: var(--white-color);
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+}
+
+.menu-bottom li a:hover{
+    color: var(--orange-color);
+    text-decoration: underline;
+}
+
+.text-footer{
+    color: var(--white-color);
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* link qr */
+#link-qr{
+
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-qr{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    max-width: calc(400px / 32px);
+    background-color: var(--white-color);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: madalOpenQr ease 0.5s;
+    -webkit-animation: madalOpenQr ease 0.5s;
+}
+
+@keyframes madalOpenQr {
+    from{
+       opacity: 0;
+       transform: translateY(-100px);
+       -webkit-transform: translateY(-100px);
+    }
+    to{
+       opacity: 1;
+       transform: translateY(0);
+       -webkit-transform: translateY(0);
+    }
+}
+
+.box-qr i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.box-qr i:hover{
+    background-color: #e5c4b7;
+}
+
+.box-qr img{
+    width: 200px;
+    height: 280px;
+}

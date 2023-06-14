@@ -1,0 +1,323 @@
+/* pc */
+@media (min-width: 1024px){
+
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px){
+    main{
+        width: 720px;
+    }
+
+    .container{
+        width: 720px;
+    }
+
+    .login{
+        width: 75%;
+    }
+      
+}
+
+/* mobile and small mobile */
+@media (max-width: 767px){
+    /* header */
+    nav{
+        justify-content: space-evenly;
+    }
+
+    main{
+        z-index: 10;
+    }
+
+    .logout{
+        align-self: center;
+    }
+
+    #menu{
+        display: none;
+        z-index: 13;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0px;
+        animation: madalFadeIn ease 0.5s;
+    }
+
+    .menu-mobile{
+        display: block;
+
+    }
+
+    .menu>li{
+        display: block;
+    }
+
+    .menu>li>a{
+        display: block;
+    }
+
+    /* container */
+    .login{
+        width: 70%;
+    }
+}
+
+/* mobile */
+@media (min-width: 480px) and (max-width: 767px){
+    /* header */
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav{
+        width: 100%;
+    }
+    .logout{
+        z-index: 1;
+    }
+
+    menu{
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu{
+        position: absolute;
+        top: 345px;
+        width: 90%;
+        background: #edeae1;
+        border: 1px solid var(--grey-color);
+    }
+
+    .menu>li{
+        padding: 0 15px;
+    }
+
+    /* container */
+    .container{
+        width: 100%;
+        height: 1150px;
+    }
+
+    .login{
+        width: 450px;
+    }
+
+    .login input{
+        width: 350px;
+    }
+
+    .pass-word{
+        width: 350px;
+        position: relative;
+    }
+
+    .login button{
+        width: 350px;
+    }
+
+    .q-pass{
+        margin-right: 65px;
+    }
+
+    .or-dash{
+        width: 350px;
+    }
+
+    .box-fb-gg span{
+        font-size: 0.75rem;
+    }
+
+    .link-signup{
+        width: auto;
+        text-align: center;
+    }
+
+    /* footer */
+    footer{
+        margin-top: 0;
+    }
+
+    footer>menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu-bottom{
+        width: 500px;
+        height: 50px;
+        margin: auto;
+    }
+
+    .text-footer{
+        width: 500px;
+        margin-top: 0;
+    }
+
+}
+
+/* small phone */
+@media (max-width: 480px){
+    /* header */
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    menu{
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu{
+        position: absolute;
+        width: 90%;
+        top: 368px;
+        background: #edeae1;
+        border: 1px solid var(--grey-color);
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    .logout{
+        width: 57%;
+        text-align: center;
+    }
+ 
+    .menu-mobile{
+        width: 95%;
+        height: 40%;
+        margin-top: 30px;
+    }
+    
+    .container{
+        width: 95%;
+        height: 1200px;
+    }
+
+    .login{
+        width: 90%;
+    }
+
+    .login input{
+        width: 90%;
+    }
+    
+    .pass-word{
+        width: 90%;
+        position: relative;
+    }
+    
+    .pass-word input{
+        width: 100%;
+    }
+    
+    .login button{
+        width: 90%;
+    }
+
+    .q-pass{
+        margin-right: 20px;
+    }
+
+    .or-dash{
+        width: 90%;
+    }
+
+    .box-fb-gg{
+        width: 90%;
+    }
+
+    .box-fb,
+    .box-gg{
+        justify-content: space-around;
+    }
+
+    .box-fb-gg span{
+        width: 75%;
+        font-size: 0.8rem;
+    }
+
+    .link-signup{
+        width: auto;
+        text-align: center;
+    }
+
+    /* footer */
+    footer>menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu-bottom{
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-bottom a{
+        padding: 0 10px;
+        font-size: 0.8rem;
+    }
+
+    .text-footer{
+        margin-top: 10px;
+        font-size: 0.7rem;
+    }
+    
+}
+
+
+@media (max-width: 320px){
+    .logout{
+        margin-bottom: 20px;
+    }
+    
+    .menu-mobile {
+        margin-top: 0;
+    }
+
+    .q-pass{
+        font-size: 0.8rem;
+    }
+
+    .login-qr{
+        width: 130px;
+        height: auto;
+        font-size: 0.8rem;
+    }
+
+    .q-pass{
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 300px){
+
+    .box-fb-gg span{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 240px){
+
+    .box-qr{
+        height: 70%;
+    }
+
+    .box-qr img{
+        width: 50%;
+        height: auto;
+    }
+}
+
