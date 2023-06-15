@@ -49,23 +49,17 @@ function showMenu() {
 }
 
 // slide img
-var index = 1;
-function slideImg(){
-  let img = ['../assets/img/gallery/gallery1.jpg',
-              '../assets/img/gallery/gallery2.jpg',
-              '../assets/img/gallery/gallery3.jpg',
-              '../assets/img/gallery/gallery4.jpg',
-              '../assets/img/gallery/gallery5.jpg',
-              '../assets/img/gallery/gallery6.jpg',
-              '../assets/img/gallery/gallery7.jpg',
-              '../assets/img/gallery/gallery8.jpg',
-              '../assets/img/gallery/gallery9.jpg',
-              '../assets/img/gallery/gallery12.jpg',
-              '../assets/img/gallery/gallery13.jpg'
-            ];
-  document.getElementById('slide-img').src = img[index];
-  index++;
-  if(index === 11){
-    index = 0;
+var myIndex = 0;
+slideImg();
+
+function slideImg() {
+  var i;
+  var x = document.getElementById("slide-img");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
   }
-}setInterval(slideImg, 3000)
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(slideImg, 2000); // Change image every 2 seconds
+}
