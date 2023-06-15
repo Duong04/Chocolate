@@ -68,4 +68,4 @@ function slideImg(){
   if(myIndex === 11){
     myIndex = 0;
   }
-}setInterval(slideImg, 2500)
+}setInterval(slideImg, 2500);
