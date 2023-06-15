@@ -87,10 +87,6 @@
         border: 1px solid var(--grey-color);
     }
 
-    .menu>li{
-        padding: 0 15px;
-    }
-
     /* container */
     .container{
         width: 100%;

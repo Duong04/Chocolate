@@ -89,9 +89,18 @@ nav{
     color: #bc482f;
     font-weight: 600;
     font-size: 0.9rem;
-    border-radius: 5px;
-    transition: all 0.5s linear;
-    -webkit-transition: all 0.5s linear;
+}
+
+.blog{
+    background-color: var(--white-color);
+    color: #5a3320;
+    border-bottom: 1px solid var(--orange-color);
+}
+
+.menu>li>a:hover{
+    background-color: var(--white-color);
+    color: #5a3320;
+    border-bottom: 1px solid var(--orange-color);
 }
 
 .menu>li>a:hover{

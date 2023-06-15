@@ -142,7 +142,6 @@
 
     .menu-mobile{
         display: block;
-
     }
 
     .menu>li{
@@ -197,11 +196,6 @@
         background: #edeae1;
         border: 1px solid var(--grey-color);
     }
-
-    .menu>li{
-        padding: 0 15px;
-    }
-
 
     /* banner */
 
