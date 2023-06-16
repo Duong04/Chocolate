@@ -76,7 +76,7 @@
         z-index: 13;
         border-top-left-radius: 0;
         border-top-right-radius: 0px;
-        animation: madalFadeIn ease 0.5s;
+        animation: madalFadeIn ease 0.3s;
     }
 
     .menu-mobile{
