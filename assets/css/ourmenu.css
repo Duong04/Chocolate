@@ -94,13 +94,11 @@ nav{
 .our-menu{
     background-color: var(--white-color);
     color: #5a3320;
-    border-bottom: 1px solid var(--orange-color);
 }
 
 .menu>li>a:hover{
     background-color: var(--white-color);
     color: #5a3320;
-    border-bottom: 1px solid var(--orange-color);
 }
 
 .other ul{
