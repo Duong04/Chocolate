@@ -347,8 +347,9 @@ nav{
     width: 33%;
 }
 
-.section-img img{
+.mySlides{
     width: 100%;
+    animation: opacity 0.5s linear;
 }
 
 .section-child2{
